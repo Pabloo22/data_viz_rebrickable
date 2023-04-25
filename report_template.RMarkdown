@@ -1,0 +1,86 @@
+---
+title: "LEGO Rebrickable Dataset Analysis"
+author: "Pablo Arino & Alvaro Laguna"
+date: " `r format(Sys.time(), '%d %B, %Y')` "
+output:
+  html_document:
+    toc: true
+    toc_float: true
+    number_sections: true
+    theme: clean
+    css: styles.css
+    self_contained: true
+---
+
+![PUT Logo](/path/to/image/PP_logotyp_ANG_CMYK.jpg)
+
+# Executive Summary
+In general, there are four parts to any executive summary:
+1. Start with the problem or need the document is solving.
+2. Outline the recommended solution.
+3. Explain the solution's value.
+4. Wrap up with a conclusion about the importance of the work.
+
+Example:
+This report presents an in-depth analysis of the LEGO Rebrickable dataset, which contains information about official
+LEGO sets, parts, and minifigs. The goal of this study is to uncover insights and trends through visualizations of
+the dataset. We explore topics such as set distribution over time, top themes, minifigures per set, and inventory
+characteristics.
+
+
+
+# Visualizations
+
+## 1. Sets Distribution over Time
+
+```{r Sets Distribution over Time, echo=FALSE}
+# Your R code to generate the line chart or bar chart for sets distribution over time
+```
+
+This visualization shows the number of sets released per year, providing insights into the growth and popularity of
+LEGO over time.
+
+## 2. Top Themes
+
+```{r Top Themes, echo=FALSE}
+# Your R code to generate the bar chart for top themes
+```
+
+This chart displays the top LEGO themes according to the number of sets released, highlighting the most popular themes
+in the LEGO universe.
+
+## 3. Part Count Distribution
+
+```{r Part Count Distribution, echo=FALSE}
+# Your R code to generate the histogram for part count distribution
+```
+
+## 4. Minifigs per Set over Time
+
+```{r Minifigs per Set over Time, echo=FALSE}
+# Your R code to generate the line chart for minifigs per set over time
+```
+
+This chart illustrates the trend of minifigures included in sets over time, demonstrating changes in minifig
+design and inclusion.
+
+## 5. Popular Part Relationships
+
+```{r Popular Part Relationships, echo=FALSE}
+# Your R code to generate the bar chart or pie chart for the distribution of part relationship types (P, R, B, M, T, A)
+```
+
+This visualization shows the distribution of part relationship types, giving insight into how various LEGO parts
+are connected to one another.
+
+## 6. Sets with Most Minifigs
+
+```{r Sets with Most Minifigs, echo=FALSE}
+# Your R code to generate the horizontal bar chart for top sets containing the highest number of minifigures
+```
+
+This chart presents the sets with the highest number of minifigures, highlighting the most minifig-rich LEGO sets.
+
+# Findings
+Findings and any interesting patterns or insights that emerged from the visualizations.
+Discussion of how these findings contribute to the understanding of the LEGO Rebrickable dataset.
