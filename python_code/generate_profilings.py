@@ -13,13 +13,13 @@ def get_filenames() -> list:
 
 
 def generate_report(filename: str) -> None:
-    # create profilings folder inside data folder
     data_folder = dotenv.get_key(dotenv.find_dotenv(), "DATA_FOLDER")
     reports_path = os.path.join(data_folder, "profilings")
+
+    # create profilings folder inside data folder
     if not os.path.exists(reports_path):
         os.mkdir(reports_path)
 
-    data_folder = dotenv.get_key(dotenv.find_dotenv(), "DATA_FOLDER")
     df = pd.read_csv(os.path.join(data_folder, filename))
     profile = ProfileReport(df, title=filename)
     profile.to_file(os.path.join(reports_path, f"{filename.replace('.csv', '')}_report.html"))
