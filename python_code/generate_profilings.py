@@ -27,6 +27,8 @@ def generate_report(filename: str) -> None:
 
 def main():
     filenames = get_filenames()
+    if len(filenames) != 12:
+        raise FileNotFoundError(f"{dotenv.get_key(dotenv.find_dotenv(), 'DATA_FOLDER')} does not contain 12 csv files")
     for filename in filenames:
         generate_report(filename)
 
