@@ -8,7 +8,6 @@ output:
     toc_float: true
     number_sections: true
     theme: clean
-    css: styles.css
     self_contained: true
 ---
 

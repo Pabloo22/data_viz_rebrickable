@@ -33,5 +33,18 @@ def main():
         generate_report(filename)
 
 
+def print_schema(filename):
+    data_folder = dotenv.get_key(dotenv.find_dotenv(), "DATA_FOLDER")
+    df = pd.read_csv(os.path.join(data_folder, filename))
+    print(f"filename: {filename}")
+    print(f"columns: {list(df.columns)}")
+
+
+def print_schemas():
+    filenames = get_filenames()
+    for filename in filenames:
+        print_schema(filename)
+
+
 if __name__ == "__main__":
-    main()
+    print_schemas()
